@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import Login from "./pages/login"
+import Signup from "./pages/signup"
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -21,8 +23,10 @@ function App() {
           Learn React
         </a>
         <Login />
+        <Signup />
       </header>
     </div>
+    </Router>
   );
 }
 

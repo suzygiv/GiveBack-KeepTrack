@@ -2,11 +2,13 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-import Login from "./pages/login"
+import Login from "./pages/login";
+import Nav from "./components/Nav/index";
 
 function App() {
   return (
     <div className="App">
+        <Nav />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

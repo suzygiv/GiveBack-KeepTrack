@@ -31,7 +31,6 @@ function App() {
               <Route exact path="/keeptrack" component={KeepTrack} />
             </Wrapper>
           </Switch>
-          {/* <Footer /> */}
         </div>
       </Router>
     </div>

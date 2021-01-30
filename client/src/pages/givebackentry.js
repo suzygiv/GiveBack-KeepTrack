@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "../components/Card";
+import GiveBackCard from "../components/GiveBackCard";
 
 const GiveBack = () => {
     return (
         <div>
-            <Card />
+            <GiveBackCard />
         </div>
     );
 }

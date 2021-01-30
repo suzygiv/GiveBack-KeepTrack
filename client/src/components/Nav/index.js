@@ -6,12 +6,13 @@ import Navbar from 'react-bootstrap/Navbar';
 function Nav() {
 
     return (<>
-        <Router>
+    <Router>
     <Navbar bg="light" variant="light">
     <Navbar.Brand href="#home">
       <img
         alt=""
         src="/logo.svg"
+        to="/welcome"
         width="30"
         height="30"
         className="d-inline-block align-top"
@@ -21,8 +22,8 @@ function Nav() {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                 <Link className="nav-link navRight"to="/">Sign In <span className="sr-only">(current)</span></Link>
-                <Link className="nav-link navRight" to="/portfolio">GiveBack</Link>
-                <Link className="nav-link navRight" to="/contact">KeepTrack</Link>
+                <Link className="nav-link navRight" to="/givebackentry">GiveBack</Link>
+                <Link className="nav-link navRight" to="/keeptrack">KeepTrack</Link>
             </Navbar.Collapse>
     </Navbar>
     </Router>

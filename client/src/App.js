@@ -1,32 +1,39 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import logo from './logo.svg';
 import './App.css';
 import Login from "./pages/login"
 import Signup from "./pages/signup"
+import GiveBack from "./pages/givebackentry"
+import KeepTrack from "./pages/keeptrack"
+import Welcome from "./pages/welcome"
+
+function Wrapper(props) {
+  return (
+    <>
+      {/* <Nav/> */}
+      {props.children}
+      {/* <Footer/> */}
+    </>
+  )
+}
 
 function App() {
   return (
-    <Router>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to GiveBack KeepTrack!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Login />
-        <Signup />
-      </header>
+    <div>
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/signup" component={Signup} />
+            <Wrapper>
+              <Route exact path="/welcome" component={Welcome} />
+              <Route exact path="/giveback" component={GiveBack} />
+              <Route exact path="/keeptrack" component={KeepTrack} />
+            </Wrapper>
+          </Switch>
+        </div>
+      </Router>
     </div>
-    </Router>
   );
 }
 

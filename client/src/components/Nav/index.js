@@ -6,12 +6,13 @@ import Navbar from 'react-bootstrap/Navbar';
 function Nav() {
 
     return (<>
-        <Router>
+    <Router>
     <Navbar bg="light" variant="light">
     <Navbar.Brand href="#home">
       <img
         alt=""
         src="/logo.svg"
+        to="/welcome"
         width="30"
         height="30"
         className="d-inline-block align-top"

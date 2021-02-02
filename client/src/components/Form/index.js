@@ -4,8 +4,8 @@ import Button from 'react-bootstrap/Button';
 class Form extends Component {
     // Setting the component's initial state
     state = {
-        firstName: "",
-        lastName: "",
+        email: "",
+        password: "",
     };
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change
@@ -20,8 +20,8 @@ class Form extends Component {
         // Preventing the default behavior of the form submit (which is to refresh the page)
         event.preventDefault();
         this.setState({
-            firstName: "",
-            lastName: "",
+            email: "",
+            password: "",
         });
     };
     render() {
@@ -31,21 +31,21 @@ class Form extends Component {
                 <Container>
                     <h1>
                         LOGIN
-          </h1>
+                    </h1>
                     <form className="form">
                         <input
-                            value={this.state.firstName}
+                            value={this.state.email}
                             name="email"
                             onChange={this.handleInputChange}
                             type="text"
                             placeholder="Email"
                         />
-            &nbsp;&nbsp;&nbsp;
-            <input
-                            value={this.state.lastName}
+                        &nbsp;&nbsp;&nbsp;
+                        <input
+                            value={this.state.password}
                             name="password"
                             onChange={this.handleInputChange}
-                            type="text"
+                            type="password"
                             placeholder="Password"
                         />
                         <Button variant="dark" onClick={this.handleFormSubmit}>Submit</Button>

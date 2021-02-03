@@ -1,8 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const routes = require("./routes");
+const db = require("./models");
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -13,6 +15,9 @@ if (process.env.NODE_ENV === "production") {
 // Define any API routes before this runs
 app.use(routes)
 
-app.listen(PORT, function() {
-  console.log(`🌎 ==> API server now on port ${PORT}!`);
+// Syncing our sequelize models and then starting our Express app
+db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });

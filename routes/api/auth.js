@@ -10,6 +10,12 @@ const router = require ("express").Router();
 //get routesta
 
 router.post("/api/login", passport.authenticate("local"), function(req, res) {
+    db.User.findOne({
+        email: req.body.email
+    },function(){
+        user.validPassword(req.body.password);
+        res.status(200);
+    })
     res.json(req.user);
   });
 

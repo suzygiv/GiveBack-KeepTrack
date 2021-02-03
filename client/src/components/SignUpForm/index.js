@@ -18,19 +18,44 @@ class Form extends Component {
             [name]: value
         });
     };
-    handleFormSubmit = event => {
-        // Preventing the default behavior of the form submit (which is to refresh the page)
-        event.preventDefault();
-        // this.setState({
-        //     email: "",
-        //     password: "",
-        // });
-        let email = this.state.email;
-        let password = this.state.password; 
-        axios.post("api/signup", {email, password}).then(
-            this.props.history.push("/welcome")
-        )     
-    };
+    // handleFormSubmit = event => {
+    //     // Preventing the default behavior of the form submit (which is to refresh the page)
+    //     event.preventDefault();
+    //     // this.setState({
+    //     //     email: "",
+    //     //     password: "",
+    //     // });
+    //     let email = this.state.email;
+    //     let password = this.state.password; 
+    //     axios.post("api/signup", {email, password}).then(
+    //         this.props.history.push("/welcome")
+    //     )     
+    // };
+
+    handleSubmit = (event) => {
+        event.preventDefault()
+        console.log('sign-up-form, email:');
+        console.log(this.state.email);
+        axios.post('/api/auth/signup', {
+            email: this.state.email,
+            password: this.state.password
+        })
+            .then(response => {
+                console.log(response)
+                if (response.data) {
+                    console.log('successful signup')
+                    this.setState({
+                        redirectTo: '/login'
+                    })
+                } else {
+                    console.log('Sign-up error');
+                }
+            }).catch(error => {
+                console.log('Sign-up server error: ')
+                console.log(error);
+            })
+    }
+
     render() {
         // Notice how each input has a value, name, and onChange prop
         return (
@@ -55,7 +80,7 @@ class Form extends Component {
                             type="password"
                             placeholder="Password"
                         />
-                        <Button variant="dark" onClick={this.handleFormSubmit}>Submit</Button>
+                        <Button variant="dark" onClick={this.handleSubmit}>Submit</Button>
                     </form>
                 </Container>
             </div>

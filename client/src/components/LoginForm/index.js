@@ -18,26 +18,54 @@ class Form extends Component {
             [name]: value
         });
     };
-    handleFormSubmit = event => {
-        // Preventing the default behavior of the form submit (which is to refresh the page)
+    // handleFormSubmit = event => {
+    //     // Preventing the default behavior of the form submit (which is to refresh the page)
+    //     event.preventDefault();
+    //     // this.setState({
+    //     //     email: "",
+    //     //     password: "",
+    //     // });
+    //     let email = this.state.email;
+    //     let password = this.state.password; 
+    //     axios.post("api/login", {email, password}).then(
+    //         this.props.history.push("/welcome")
+    //     )     
+    // };
+
+
+    handleSubmit(event) {
         event.preventDefault();
-        // this.setState({
-        //     email: "",
-        //     password: "",
-        // });
-        let email = this.state.email;
-        let password = this.state.password; 
-        axios.post("api/login", {email, password}).then(
-            this.props.history.push("/welcome")
-        )     
-    };
+        axios.post('/api/auth/login', {
+            email: this.state.email,
+            password: this.state.password
+        })
+            .then(response => {
+                console.log('login response: ')
+                console.log(response)
+                if (response.status === 200) {
+                    this.props.updateUser({
+                        loggedIn: true,
+                        username: response.data.username
+                    })
+                    this.setState({
+                        redirectTo: '/welcome'
+                    })
+                }
+            }).catch(error => {
+                console.log('login error: ')
+                console.log(error);
+            })
+    }
+
+
+
     render() {
         // Notice how each input has a value, name, and onChange prop
         return (
             <div>
                 <Container>
                     <h1>
-                        LOGIN
+                        SIGNUP
                     </h1>
                     <form className="form">
                         <input

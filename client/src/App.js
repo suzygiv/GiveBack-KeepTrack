@@ -6,7 +6,6 @@ import Signup from "./pages/signup"
 import GiveBack from "./pages/givebackentry"
 import KeepTrack from "./pages/keeptrack"
 import Welcome from "./pages/welcome"
-import GiveBackForm from "./components/GiveBackForm";
 
 function Wrapper(props) {
   return (

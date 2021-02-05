@@ -23,8 +23,8 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
+            <Route exact path="/" component={Login} />
             <Wrapper>
               <Route exact path="/welcome" component={Welcome} />
               <Route exact path="/giveback" component={GiveBack} />

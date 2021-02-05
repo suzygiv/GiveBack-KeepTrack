@@ -25,7 +25,6 @@ function App() {
           <Switch>
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/" component={Login} />
-            <GiveBackForm />
             <Wrapper>
               <Route exact path="/welcome" component={Welcome} />
               <Route exact path="/giveback" component={GiveBack} />

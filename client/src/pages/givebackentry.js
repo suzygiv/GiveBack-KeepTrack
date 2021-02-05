@@ -1,11 +1,11 @@
 import React from "react";
 import KeepTrackCard from "../components/KeepTrackCard";
 
-const keeptrack = () => {
+const KeepTrack = () => {
     return (
         <div>
             <KeepTrackCard />
         </div>
     );
 }
-export default keeptrack;
+export default KeepTrack;

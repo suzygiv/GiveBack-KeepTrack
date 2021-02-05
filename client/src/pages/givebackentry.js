@@ -1,11 +1,11 @@
 import React from "react";
-import GiveBackCard from "../components/GiveBackCard";
+import KeepTrackCard from "../components/KeepTrackCard";
 
-const GiveBack = () => {
+const keeptrack = () => {
     return (
         <div>
-            <GiveBackCard />
+            <KeepTrackCard />
         </div>
     );
 }
-export default GiveBack;
+export default keeptrack;

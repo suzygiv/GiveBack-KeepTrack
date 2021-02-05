@@ -65,7 +65,7 @@ class Form extends Component {
             <div>
                 <Container>
                     <h1>
-                        SIGNUP
+                        LOGIN
                     </h1>
                     <form className="form">
                         <input

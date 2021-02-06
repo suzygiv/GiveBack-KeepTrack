@@ -33,8 +33,9 @@ class Form extends Component {
     // };
 
 
-    handleSubmit(event) {
+    handleSubmit = event => {
         event.preventDefault();
+        console.log(this.state);
         axios.post('/api/auth/login', {
             email: this.state.email,
             password: this.state.password
@@ -43,13 +44,15 @@ class Form extends Component {
                 console.log('login response: ')
                 console.log(response)
                 if (response.status === 200) {
-                    this.props.updateUser({
-                        loggedIn: true,
-                        username: response.data.username
-                    })
-                    this.setState({
-                        redirectTo: '/welcome'
-                    })
+                    console.log('hi');
+                    // this.props.updateUser({
+                    //     loggedIn: true,
+                    //     username: response.data.username
+                    // })
+                    // this.setState({
+                    //     redirectTo: '/welcome'
+                    // })
+                    window.location.replace("/welcome");
                 }
             }).catch(error => {
                 console.log('login error: ')
@@ -83,7 +86,7 @@ class Form extends Component {
                             type="password"
                             placeholder="Password"
                         />
-                        <Button variant="dark" onClick={this.handleFormSubmit}>Submit</Button>
+                        <Button variant="dark" onClick={this.handleSubmit}>Submit</Button>
                     </form>
                 </Container>
             </div>

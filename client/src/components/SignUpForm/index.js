@@ -44,9 +44,10 @@ class Form extends Component {
                 console.log(response)
                 if (response.data) {
                     console.log('successful signup')
-                    this.setState({
-                        redirectTo: '/login'
-                    })
+                    // this.setState({
+                    //     redirectTo: '/login'
+                    // })
+                    window.location.replace("/");
                 } else {
                     console.log('Sign-up error');
                 }

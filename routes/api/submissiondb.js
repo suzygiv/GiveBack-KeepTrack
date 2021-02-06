@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const db = require("../../models/giveback")
+const db = require("../../models")
 
 //request to login route
 //request to sign up route

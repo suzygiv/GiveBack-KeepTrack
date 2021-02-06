@@ -86,8 +86,8 @@ handleSubmit = (event) => {
           <Col size="sm-12">
             <form>
               <div className="form-group">
-                <label for="exampleFormControlInput1">Organization</label>
-                <input className="form-control" type="text" placeholder="e.g. Cancer Research Institute" defaultValue={this.state.Organization} />
+                <label>Organization
+                <input className="form-control" type="text" id="exampleFormControlInput1" placeholder="e.g. Cancer Research Institute" defaultValue={this.state.Organization} /></label>
               </div>
               <div className="form-group">
                 <label for="exampleFormControlSelect1">Category</label>

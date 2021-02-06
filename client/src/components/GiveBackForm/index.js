@@ -14,28 +14,36 @@ class GiveBackForm extends Component {
       Environment: "",
       HealthMedical: "",
       AnimalHumane: "",
-      employeeMatch: "",
-      taxDeductible: "",
-      receiptDocumentation: "",
+      employeeMatch: false,
+      taxDeductible: false,
+      receiptDocumentation: false,
       Amount: ""
   };
  
 
   handleInputChange = event => {
       // Getting the value and name of the input which triggered the change
-      let value = event.target.value;
-      const name = event.target.name;
-      // Updating the input's state
-      this.setState({
-          [name]: value
-      });
-  }
+  //     let value = event.target.value;
+  //     const name = event.target.name;
+  //     // Updating the input's state
+  //     this.setState({
+  //         [name]: value
+  //     });
+  // }
+  const target = event.target;
+  const value = target.type === 'checkbox' ? target.checked : target.value;
+  const name = target.name;
+
+  this.setState({
+    [name]: value
+  });
+}
 
 handleSubmit = (event) => {
   event.preventDefault()
   console.log('give-back-form, Organization:');
   console.log(this.state.Organization);
-  axios.post('/api/giveback/', {
+  axios.post('/api/submissiondb/giveback', {
       Organization: this.state.Organization,
       ArtCulture: this.state.ArtCulture,
       Education: this.state.Education,
@@ -92,15 +100,33 @@ handleSubmit = (event) => {
                 </select>
               </div>
               <div className="form-check form-check-inline">
-                <input className="form-check-input" type="checkbox" id="inlineCheckbox1" value={this.state.employeeMatch} />
+                <input
+                    type="checkbox"
+                    id="employeeMatch"
+                    name="employeeMatch"
+                    onChange={this.handleInputChange}
+                    checked={this.state.employeeMatch}
+                  />
                 <label className="form-check-label" for="inlineCheckbox1">Employee Match</label>
               </div>
               <div className="form-check form-check-inline">
-                <input className="form-check-input" type="checkbox" id="inlineCheckbox2" value={this.state.taxDeductible} />
+                <input
+                    type="checkbox"
+                    id="taxDeductible"
+                    name="taxDeductible"
+                    onChange={this.handleInputChange}
+                    checked={this.state.taxDeductible}
+                  />
                 <label className="form-check-label" for="inlineCheckbox2">Tax Deductible</label>
               </div>
               <div className="form-check form-check-inline">
-                <input className="form-check-input" type="checkbox" id="inlineCheckbox3" value={this.state.receiptDocumentation} />
+                <input
+                    type="checkbox"
+                    id="receiptDocumentation"
+                    name="receiptDocumentation"
+                    onChange={this.handleInputChange}
+                    checked={this.state.receiptDocumentation}
+                  />
                 <label className="form-check-label" for="inlineCheckbox3">Receipt &#38; Documentation</label>
               </div>
               <div className="form-group">

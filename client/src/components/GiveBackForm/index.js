@@ -100,17 +100,16 @@ handleSubmit = (event) => {
                 onChange={this.handleInputChange}
                 /></label>
               </div>
-               <form onSubmit={this.handleSubmit}>
-                <label for="exampleFormControlSelect1">Category
-                <select defaultValue={this.state.defaultValue} onChange={this.handleChange}>                  
+              <div className="form-group">
+                <label for="exampleFormControlSelect1">Category</label>
+                <select className="form-control" id="exampleFormControlSelect1">
                   <option value="ArtCulture"> Art &#38; Culture</option>
                   <option value="Education"> Education</option>
                   <option value="Environment"> Environment</option>
                   <option value="HealthMedical"> Health &#38; Medical</option>
                   <option value="AnimalHumane"> Animal &#38; Humane</option>
                 </select>
-                </label>
-              </form>
+              </div>
               <div className="form-check form-check-inline">
                 <input
                     type="checkbox"

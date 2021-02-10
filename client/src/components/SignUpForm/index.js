@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import Container from "../Container/index";
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
+import Modal from 'react-bootstrap/Modal';
   
 class Form extends Component {
     // Setting the component's initial state
     state = {
         email: "",
         password: "",
+        errorMessage: ""
     };
     handleInputChange = event => {
         // Getting the value and name of the input which triggered the change
@@ -48,11 +50,9 @@ class Form extends Component {
                     //     redirectTo: '/login'
                     // })
                     window.location.replace("/");
-                } else {
-                    console.log('Sign-up error');
-                }
+                } 
             }).catch(error => {
-                console.log('Sign-up server error: ')
+                this.setState({errorMessage: "Your email address and password already exist"});
                 console.log(error);
             })
     }
@@ -83,6 +83,25 @@ class Form extends Component {
                         />
                         <Button variant="dark" onClick={this.handleSubmit}>Submit</Button>
                     </form>
+                    <Modal
+                        show={Boolean(this.state.errorMessage)}
+                        onHide={() => this.setState({errorMessage: ""})}
+                        backdrop="static"
+                        keyboard={false}
+                    >
+                        <Modal.Header closeButton>
+                        <Modal.Title>ERROR</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                        {this.state.errorMessage}
+                        </Modal.Body>
+                        <Modal.Footer>
+                        <Button variant="secondary" onClick={() => this.setState({errorMessage: ""})}>
+                            Close
+                        </Button>
+                        <Button variant="primary" a href="/">Login</Button>
+                        </Modal.Footer>
+                    </Modal>
                 </Container>
             </div>
         );

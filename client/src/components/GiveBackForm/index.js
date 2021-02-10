@@ -13,11 +13,7 @@ class GiveBackForm extends Component {
   // Setting the component's initial state
   state = {
       Organization: "",
-      ArtCulture: "",
-      Education: "",
-      Environment: "",
-      HealthMedical: "",
-      AnimalHumane: "",
+      category: "",
       employeeMatch: false,
       taxDeductible: false,
       receiptDocumentation: false,
@@ -37,7 +33,8 @@ class GiveBackForm extends Component {
   const target = event.target;
   const value = target.type === 'checkbox' ? target.checked : target.value;
   const name = target.name;
-
+console.log(value)
+console.log(name)
   this.setState({
     [name]: value
   });
@@ -49,11 +46,7 @@ handleSubmit = (event) => {
   console.log(this.state.Organization);
   axios.post('/api/submissiondb/giveback', {
       Organization: this.state.Organization,
-      ArtCulture: this.state.ArtCulture,
-      Education: this.state.Education,
-      Environment: this.state.Environment,
-      HealthMedical: this.state.HealthMedical,
-      AnimalHumane: this.state.AnimalHumane,
+      category: this.state.category,
       employeeMatch: this.state.employeeMatch,
       taxDeductible: this.state.taxDeductible,
       receiptDocumentation: this.state.receiptDocumentation,
@@ -88,7 +81,7 @@ handleSubmit = (event) => {
         </Row>
         <Row>
           <Col size="sm-12">
-            <form>
+            <form onSubmit={this.handleSubmit}>
               <div className="form-group">
                 <label>Organization
                 <input className="form-control" 

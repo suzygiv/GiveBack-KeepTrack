@@ -2,7 +2,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Giveback = sequelize.define("Giveback", {
 
-    organization: {
+    Organization: {
       type: DataTypes.STRING,
       allowNull: false
     },

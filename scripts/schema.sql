@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS gbkt;
+
+CREATE DATABASE gbkt;
+
+

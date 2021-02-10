@@ -6,11 +6,12 @@ import Signup from "./pages/signup"
 import GiveBack from "./pages/givebackentry"
 import KeepTrack from "./pages/keeptrack"
 import Welcome from "./pages/welcome"
+import Nav from "./components/Nav"
 
 function Wrapper(props) {
   return (
     <>
-      {/* <Nav/> */}
+      <Nav/>
       {props.children}
       {/* <Footer/> */}
     </>

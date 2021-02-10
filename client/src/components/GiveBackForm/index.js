@@ -6,6 +6,10 @@ import Button from 'react-bootstrap/Button';
 import axios from "axios";
 
 class GiveBackForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {defaultValue: ""};
+  }
   // Setting the component's initial state
   state = {
       Organization: "",
@@ -17,9 +21,9 @@ class GiveBackForm extends Component {
       employeeMatch: false,
       taxDeductible: false,
       receiptDocumentation: false,
-      Amount: ""
+      Amount: "",
   };
- 
+
 
   handleInputChange = event => {
       // Getting the value and name of the input which triggered the change
@@ -87,18 +91,26 @@ handleSubmit = (event) => {
             <form>
               <div className="form-group">
                 <label>Organization
-                <input className="form-control" type="text" id="exampleFormControlInput1" placeholder="e.g. Cancer Research Institute" defaultValue={this.state.Organization} /></label>
+                <input className="form-control" 
+                value={this.state.Organization} 
+                name="Organization" 
+                type="text" 
+                id="exampleFormControlInput1" 
+                placeholder="e.g. Cancer Research Institute"
+                onChange={this.handleInputChange}
+                /></label>
               </div>
-              <div className="form-group">
-                <label for="exampleFormControlSelect1">Category</label>
-                <select className="form-control" id="exampleFormControlSelect1">
+               <form onSubmit={this.handleSubmit}>
+                <label for="exampleFormControlSelect1">Category
+                <select defaultValue={this.state.defaultValue} onChange={this.handleChange}>                  
                   <option value="ArtCulture"> Art &#38; Culture</option>
                   <option value="Education"> Education</option>
                   <option value="Environment"> Environment</option>
                   <option value="HealthMedical"> Health &#38; Medical</option>
                   <option value="AnimalHumane"> Animal &#38; Humane</option>
                 </select>
-              </div>
+                </label>
+              </form>
               <div className="form-check form-check-inline">
                 <input
                     type="checkbox"
@@ -135,7 +147,7 @@ handleSubmit = (event) => {
                   value={this.state.Amount}
                   name="Amount"
                   onChange={this.handleInputChange}
-                  type="text"
+                  type="number"
                   placeholder="Amount" />
                 <Button variant="primary" onClick={this.handleSubmit}>Submit</Button>
               </div>

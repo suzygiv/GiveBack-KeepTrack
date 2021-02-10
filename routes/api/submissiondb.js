@@ -9,6 +9,7 @@ const db = require("../../models")
 //get routesta
 
 router.post("/submissiondb/giveback", function (req, res) {
+    console.log(req.body);
     res.status(200).json(req.user);
 });
 

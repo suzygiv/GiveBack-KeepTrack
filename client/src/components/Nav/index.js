@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 
+
 function Nav() {
 
     return (<>
@@ -11,10 +12,10 @@ function Nav() {
     <Navbar.Brand href="#home">
       <img
         alt=""
-        src="/logo.svg"
+        src={process.env.PUBLIC_URL+"/images/logo.png"}
         to="/welcome"
-        width="30"
-        height="30"
+        width="40"
+        height="40"
         className="d-inline-block align-top"
       />{' '}
       GiveBack-KeepTrack

@@ -6,11 +6,7 @@ import Button from 'react-bootstrap/Button';
 import axios from "axios";
 
 class GiveBackForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {defaultValue: ""};
-  }
-  // Setting the component's initial state
+// Setting the component's initial state
   state = {
       Organization: "",
       category: "",
@@ -33,8 +29,8 @@ class GiveBackForm extends Component {
   const target = event.target;
   const value = target.type === 'checkbox' ? target.checked : target.value;
   const name = target.name;
-console.log(value)
-console.log(name)
+  console.log(value)
+  console.log(name)
   this.setState({
     [name]: value
   });

@@ -91,7 +91,7 @@ handleSubmit = (event) => {
               </div>
               <div className="form-group">
                 <label for="exampleFormControlSelect1">Category</label>
-                <select className="form-control" id="exampleFormControlSelect1">
+                <select className="form-control" onChange={this.handleInputChange} name="category" id="exampleFormControlSelect1">
                   <option value="ArtCulture"> Art &#38; Culture</option>
                   <option value="Education"> Education</option>
                   <option value="Environment"> Environment</option>

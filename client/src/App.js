@@ -28,7 +28,7 @@ function App() {
             <Route exact path="/" component={Login} />
             <Wrapper>
               <Route exact path="/welcome" component={Welcome} />
-              <Route exact path="/giveback" component={GiveBack} />
+              <Route exact path="/givebackentry" component={GiveBack} />
               {/* <Route exact path="/keeptrack" component={KeepTrack} /> */}
             </Wrapper>
           </Switch>

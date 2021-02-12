@@ -10,8 +10,6 @@ const GivebackController = require("../../controllers/givebackcontroller")
 
 router.post("/submissiondb/giveback", GivebackController.create);
 
-router.get("/submissiondb/keeptrack", function (req, res) {
-    res.status(200).json(req.user);
-});
+router.get("/submissiondb/keeptrack", GivebackController.findAll);
 
 module.exports = router

@@ -11,8 +11,9 @@ function KeepTrackCard(props) {
         {props.Organization}
       </div>
       <div className="card-body">
-        <h5 className="card-title">{props.Amount}</h5>
-        <p className="card-text">{props.Amount}<br />
+        <h5 className="card-title">{props.amount}</h5>
+        <p className="card-text">{props.amount}<br />
+        {/* if false, do this, if true, do this, with a ternary operator */}
         </p>
       </div>
     </div>

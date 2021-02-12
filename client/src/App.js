@@ -4,7 +4,7 @@ import './App.css';
 import Login from "./pages/login"
 import Signup from "./pages/signup"
 import GiveBack from "./pages/givebackentry"
-// import KeepTrack from "./pages/keeptrack"
+import KeepTrack from "./pages/keeptrack"
 import Welcome from "./pages/welcome"
 import Nav from "./components/Nav"
 
@@ -29,7 +29,7 @@ function App() {
             <Wrapper>
               <Route exact path="/welcome" component={Welcome} />
               <Route exact path="/givebackentry" component={GiveBack} />
-              {/* <Route exact path="/keeptrack" component={KeepTrack} /> */}
+              <Route exact path="/keeptrack" component={KeepTrack} />
             </Wrapper>
           </Switch>
         </div>

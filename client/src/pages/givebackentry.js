@@ -1,11 +1,11 @@
 import React from "react";
 import GiveBackForm from "../components/GiveBackForm"
 
-const KeepTrack = () => {
+const Givebackentry = () => {
     return (
         <div>
-            <GiveBackForm/>
+            <GiveBackForm />
         </div>
     );
 }
-export default KeepTrack;
+export default Givebackentry;

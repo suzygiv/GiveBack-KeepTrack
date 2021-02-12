@@ -6,11 +6,7 @@ import Button from 'react-bootstrap/Button';
 import axios from "axios";
 
 class GiveBackForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {defaultValue: ""};
-  }
-  // Setting the component's initial state
+// Setting the component's initial state
   state = {
       Organization: "",
       category: "",
@@ -33,8 +29,8 @@ class GiveBackForm extends Component {
   const target = event.target;
   const value = target.type === 'checkbox' ? target.checked : target.value;
   const name = target.name;
-console.log(value)
-console.log(name)
+  console.log(value)
+  console.log(name)
   this.setState({
     [name]: value
   });
@@ -93,15 +89,16 @@ handleSubmit = (event) => {
                 onChange={this.handleInputChange}
                 /></label>
               </div>
-                <label for="exampleFormControlSelect1">Category
-                <select name="category" value={this.state.category} onChange={this.handleInputChange}>                  
+              <div className="form-group">
+                <label for="exampleFormControlSelect1">Category</label>
+                <select className="form-control" onChange={this.handleInputChange} name="category" id="exampleFormControlSelect1">
                   <option value="ArtCulture"> Art &#38; Culture</option>
                   <option value="Education"> Education</option>
                   <option value="Environment"> Environment</option>
                   <option value="HealthMedical"> Health &#38; Medical</option>
                   <option value="AnimalHumane"> Animal &#38; Humane</option>
                 </select>
-                </label>
+              </div>
               <div className="form-check form-check-inline">
                 <input
                     type="checkbox"

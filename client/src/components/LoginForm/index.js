@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Container from "../Container/index";
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
+import Row from "../Row";
+import Col from "../Col";
+import "./styles.css";
 
 class Form extends Component {
     // Setting the component's initial state
@@ -65,33 +68,59 @@ class Form extends Component {
     render() {
         // Notice how each input has a value, name, and onChange prop
         return (
+            
             <div>
-                <Container>
-                    <h1>
-                        LOGIN
-                    </h1>
-                    <form className="form">
-                        <input
+                
+               
+
+                <Container style={{marginTop: "50px"}}>
+                    <Row>
+                        <Col size="md-6">
+                            <h5 style={{color: "#727382"}}>Hi, welcome back!</h5>
+                            <p style={{fontSize: "3.9rem", whiteSpace: "nowrap", fontFamily: "Source Sans Pro, sansSerif", marginBottom: "-20px"}}><span className="blue-text">give</span>back </p>
+                            <p style={{fontSize: "3.9rem", whiteSpace: "nowrap", fontFamily: "Source Sans Pro, sansSerif"}}>keep<span className="blue-text">track</span> </p>
+                            <h5 style={{color: "#727382", marginBottom:"20px"}}>Sign in with your details to continue</h5>
+                            
+                        </Col>
+              
+                    <Col size="md-6">
+                    <div className="shadow rounded" style={{ maxWidth: "100%", padding: "50px", opacity: "1"}}>
+                    <h3 style={{textAlign: "center", marginBottom: "20px", fontFamily: "Source Sans Pro, sansSerif"}}>Login</h3>
+                
+                    <form>
+                        <div style={{textAlign: "center"}}>
+                        <input style={{marginBottom: "20px"}}
                             value={this.state.email}
                             name="email"
                             onChange={this.handleInputChange}
                             type="text"
                             placeholder="Email"
                         />
-                        &nbsp;&nbsp;&nbsp;
-                        <input
+                        </div>
+                       <div style={{textAlign: "center"}}>
+                        <input style={{marginBottom: "20px"}}
                             value={this.state.password}
                             name="password"
                             onChange={this.handleInputChange}
                             type="password"
                             placeholder="Password"
                         />
-                        <Button variant="dark" onClick={this.handleSubmit}>Submit</Button>
+                        </div>
+                        <div style={{textAlign: "center"}}>
+                        < Button className="btn-primary custom-btn" style={{marginBottom: "20px"}} onClick={this.handleSubmit}>Submit</Button>
+                        </div>
                     </form>
+                    </div>
+                    </Col>
+                    </Row>
+                    
+                   
+                    
                 </Container>
             </div>
         );
     }
+    
 }
 export default Form;
 

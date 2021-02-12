@@ -3,6 +3,9 @@ import Container from "../Container/index";
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 import Modal from 'react-bootstrap/Modal';
+import Row from "../Row";
+import Col from "../Col";
+import "./styles.css";
   
 class Form extends Component {
     // Setting the component's initial state
@@ -61,27 +64,41 @@ class Form extends Component {
         // Notice how each input has a value, name, and onChange prop
         return (
             <div>
-                <Container>
-                    <h1>
-                        SIGN UP
-                    </h1>
+                <Container style={{marginTop: "50px"}}>
+                    <Row>
+                        <Col size="md-6">
+                            <h5 style={{color: "#727382"}}>Hi, welcome to!</h5>
+                            <p style={{fontSize: "3.9rem", whiteSpace: "nowrap", fontFamily: "Source Sans Pro, sansSerif", marginBottom: "-20px"}}><span className="blue-text">give</span>back </p>
+                            <p style={{fontSize: "3.9rem", whiteSpace: "nowrap", fontFamily: "Source Sans Pro, sansSerif"}}>keep<span className="blue-text">track</span> </p>
+                            <h5 style={{color: "#727382"}}>Sign up with your details to continue</h5>
+                            
+                        </Col>
+                        <Col size="md-6">
+                    <div className="shadow rounded" style={{ maxWidth: "100%", padding: "50px", opacity: "1"}}>
+                    <h3 style={{textAlign: "center", marginBottom: "20px", fontFamily: "Source Sans Pro, sansSerif"}}>Sign Up</h3>
                     <form className="form">
-                        <input
+                    <div style={{textAlign: "center"}}>
+                        <input style={{marginBottom: "20px"}}
                             value={this.state.email}
                             name="email"
                             onChange={this.handleInputChange}
                             type="text"
                             placeholder="Email"
                         />
-                        &nbsp;&nbsp;&nbsp;
-                        <input
+                        </div>
+                        <div style={{textAlign: "center"}}>
+                        <input style={{marginBottom: "20px"}}
+                       
                             value={this.state.password}
                             name="password"
                             onChange={this.handleInputChange}
                             type="password"
                             placeholder="Password"
                         />
-                        <Button variant="dark" onClick={this.handleSubmit}>Submit</Button>
+                        </div>
+                        <div style={{textAlign: "center"}}>
+                        <Button className="btn-primary custom-btn" style={{marginBottom: "20px"}} variant="dark" onClick={this.handleSubmit}>Submit</Button>
+                        </div>
                     </form>
                     <Modal
                         show={Boolean(this.state.errorMessage)}
@@ -96,14 +113,20 @@ class Form extends Component {
                         {this.state.errorMessage}
                         </Modal.Body>
                         <Modal.Footer>
-                        <Button variant="secondary" onClick={() => this.setState({errorMessage: ""})}>
+                        <Button className="btn-secondary custom-btn" variant="secondary" onClick={() => this.setState({errorMessage: ""})}>
                             Close
                         </Button>
-                        <Button variant="primary" a href="/">Login</Button>
+                        <Button className="btn-primary custom-btn" variant="primary" a href="/">Login</Button>
                         </Modal.Footer>
                     </Modal>
-                </Container>
-            </div>
+                    </div>
+                    </Col>
+                    </Row>
+                    
+                   
+                    
+                </Container>            
+                </div>
         );
     }
 }

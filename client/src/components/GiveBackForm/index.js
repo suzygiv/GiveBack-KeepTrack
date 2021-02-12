@@ -136,7 +136,7 @@ handleSubmit = (event) => {
                 <label for="exampleFormControlInput1" style={{ margin: "5px" }}>Amount</label>
                 <input
                   value={this.state.Amount}
-                  name="Amount"
+                  name="amount"
                   onChange={this.handleInputChange}
                   type="number"
                   placeholder="Amount" />

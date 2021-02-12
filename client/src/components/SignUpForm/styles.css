@@ -1,0 +1,25 @@
+.btn-primary.custom-btn {
+    background-color:  white;
+    border-color: #51BBD5;
+    color: #51BBD5;
+    
+  }
+ 
+  .btn-primary.custom-btn:hover {
+    background-color: #51BBD5;
+  }
+
+  .btn-secondary.custom-btn {
+    background-color:  white;
+    border-color: #727382;
+    color: #727382;
+    
+  }
+ 
+  .btn-secondary.custom-btn:hover {
+    background-color: #727382;
+  }
+
+  .blue-text {
+    color: #51BBD5;
+  }

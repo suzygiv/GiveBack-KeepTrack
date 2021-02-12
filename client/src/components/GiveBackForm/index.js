@@ -79,7 +79,7 @@ handleSubmit = (event) => {
           <Col size="sm-12">
             <form onSubmit={this.handleSubmit}>
               <div className="form-group">
-                <label>Organization
+                <label>Organization</label>
                 <input className="form-control" 
                 value={this.state.Organization} 
                 name="Organization" 
@@ -87,7 +87,7 @@ handleSubmit = (event) => {
                 id="exampleFormControlInput1" 
                 placeholder="e.g. Cancer Research Institute"
                 onChange={this.handleInputChange}
-                /></label>
+                />
               </div>
               <div className="form-group">
                 <label for="exampleFormControlSelect1">Category</label>
@@ -130,15 +130,18 @@ handleSubmit = (event) => {
                 <label className="form-check-label" for="inlineCheckbox3">Receipt &#38; Documentation</label>
               </div>
               <div className="form-group">
-                <label for="exampleFormControlInput1" style={{ margin: "5px" }}>Amount</label>
-                <input
-                  value={this.state.Amount}
-                  name="amount"
-                  onChange={this.handleInputChange}
-                  type="number"
-                  placeholder="Amount" />
-                <Button variant="primary" onClick={this.handleSubmit}>Submit</Button>
+                <label>Amount</label>
+                <input className="form-control" 
+                value={this.state.Amount} 
+                name="Amount" 
+                type="number" 
+                id="exampleFormControlInput1" 
+                placeholder=""
+                onChange={this.handleInputChange}
+                />
               </div>
+                <Button variant="primary" onClick={this.handleSubmit}>Submit</Button>
+
 
             </form>
           </Col>

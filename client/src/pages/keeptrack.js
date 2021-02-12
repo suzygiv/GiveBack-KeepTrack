@@ -2,6 +2,7 @@ import Axios from "axios";
 import React, { useState, useEffect } from "react";
 import KeepTrackCard from "../components/KeepTrackCard";
 import axios from "axios";
+import KeepTrackChart from "../components/Chart";
 
 //need seeds for this file to work
 
@@ -25,9 +26,12 @@ useEffect(()=>{
 // 3. the get call to axios goes here, too
     return (
         <div>
+            <KeepTrackChart/>
+            <div>
             {submissions && submissions.map((submissions, index) => {
                 return <KeepTrackCard {...submissions} key={index} />
             })}
+            </div>
         </div>
     );
 }

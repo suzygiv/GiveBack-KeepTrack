@@ -26,8 +26,11 @@ function KeepTrackChart(props) {
                         backgroundColor: [
                             'rgba(97, 218, 251)',
                             'rgba(200, 239, 250)',
-                            'rgba(27, 157, 194)'
-                    ]
+                            'rgba(27, 157, 194)',
+                            'rgba(38, 70, 79)',
+                            'rgba(0, 199, 255)'
+
+                    ], 
                     }],
                     labels   
                     },

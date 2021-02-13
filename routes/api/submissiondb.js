@@ -12,4 +12,6 @@ router.post("/submissiondb/giveback", GivebackController.create);
 
 router.get("/submissiondb/keeptrack", GivebackController.findAll);
 
+//need a new get route that only gets the data that we want for the chart
+
 module.exports = router

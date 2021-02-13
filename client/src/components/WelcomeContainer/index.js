@@ -29,7 +29,7 @@ function WelcomeContainer() {
         <Col size="md-12">
           <div>
             {/* get request to get username ? */}
-            <p style={{fontSize: "1.3rem"}}>Welcome {sessionStorage.getItem("email")}! Today you donated x amount. Good job!</p>
+            <p style={{fontSize: "1.3rem"}}>Welcome {sessionStorage.getItem("email")}! You've donated x amount so far. Great job!</p>
             <p style={{fontSize: "1.2rem"}}> What would you like to do?</p>
             <div>
             <Link to="/givebackentry">

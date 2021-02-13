@@ -8,7 +8,7 @@ function Nav() {
 
     return (<>
   
-    <Navbar bg="light" variant="light">
+    <Navbar bg="white" variant="light">
     <Navbar.Brand href="/welcome">
       <img
         alt=""
@@ -18,7 +18,6 @@ function Nav() {
         height="40"
         className="d-inline-block align-top"
       />{' '}
-      GiveBack-KeepTrack
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">

@@ -75,16 +75,23 @@ class Form extends Component {
 
                 <Container style={{marginTop: "50px"}}>
                     <Row>
-                        <Col size="md-6">
-                            <h5 style={{color: "#727382"}}>Hi, welcome back!</h5>
-                            <p style={{fontSize: "3.9rem", whiteSpace: "nowrap", fontFamily: "Source Sans Pro, sansSerif", marginBottom: "-20px"}}><span className="blue-text">give</span>back </p>
-                            <p style={{fontSize: "3.9rem", whiteSpace: "nowrap", fontFamily: "Source Sans Pro, sansSerif"}}>keep<span className="blue-text">track</span> </p>
-                            <h5 style={{color: "#727382", marginBottom:"20px"}}>Sign in with your details to continue</h5>
+                        <Col size="lg-6">
                             
+                            <p style={{fontSize: "3.8rem", whiteSpace: "nowrap", fontFamily: "Montserrat, SansSerif", marginBottom: "-35px", marginTop: "50px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)"}}><span style={{color: "#80CDDF" }}>give</span>back </p>
+                            <p style={{fontSize: "4.0rem", whiteSpace: "nowrap", fontFamily: "Montserrat, sansSerif", marginBottom:"20px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)"}}>keep<span style={{color: "#80CDDF" }}>track</span> </p>
+
+                          
                         </Col>
               
-                    <Col size="md-6">
-                    <div className="shadow rounded" style={{ maxWidth: "100%", padding: "50px", opacity: "1"}}>
+                    <Col size="lg-6">
+                    <div className="shadow bg-white rounded" style={{ maxWidth: "100%", padding: "50px", opacity: "1"}}>
+                    <div><img
+        alt=""
+        src={process.env.PUBLIC_URL+"/images/logo.png"}
+        width="60px"
+        height="60px"
+        className="d-inline-block align-top"
+      /> </div>
                     <h3 style={{textAlign: "center", marginBottom: "20px", fontFamily: "Source Sans Pro, sansSerif"}}>Login</h3>
                 
                     <form>

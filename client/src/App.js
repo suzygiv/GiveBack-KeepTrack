@@ -20,7 +20,7 @@ function Wrapper(props) {
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Router>
         <div>
           <Switch>

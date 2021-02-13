@@ -1,10 +1,10 @@
 import React from "react";
-import Card from "../components/Card";
+import WelcomeContainer from "../components/WelcomeContainer";
 
 const Welcome = () => {
     return (
         <div>
-            <Card />
+            <WelcomeContainer />
         </div>
     );
 }

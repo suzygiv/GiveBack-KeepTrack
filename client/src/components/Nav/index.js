@@ -27,6 +27,7 @@ function Nav() {
                 <Link className="nav-link navRight" to="/">Logout</Link>
                 
             </Navbar.Collapse>
+        
     </Navbar>
    
 

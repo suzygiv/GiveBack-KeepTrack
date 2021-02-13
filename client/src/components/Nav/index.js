@@ -25,7 +25,7 @@ function Nav() {
                 <Link className="nav-link navRight"to="/">Login <span className="sr-only">(current)</span></Link>
                 <Link className="nav-link navRight" to="/givebackentry">GiveBack</Link>
                 <Link className="nav-link navRight" to="/keeptrack">KeepTrack</Link>
-                <Link className="nav-link navRight" to="/logout">Logout</Link>
+                <Link className="nav-link navRight" to="/">Logout</Link>
                 
             </Navbar.Collapse>
     </Navbar>

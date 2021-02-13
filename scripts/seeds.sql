@@ -1,8 +1,8 @@
 USE gbkt;
   
 
-INSERT INTO Givebacks (organization, category, employeeMatch, taxDeductible, receiptDocumentation, amount)
-VALUES ("The Penn Fund", "Education", null , "tax deductable", null, "500"),
- ("Penn Museum", "Arts and Culture", "employee match", null, null, "300"), 
- ("Abramson Cancer Center", "Health and Medical", null, null, "receipt documentation","700")
+INSERT INTO Givebacks (organization, category, employeeMatch, taxDeductible, receiptDocumentation, amount, createdAt, updatedAt)
+VALUES ("The Penn Fund", "Education", false , true, false, 500, now(), now()),
+ ("Penn Museum", "Arts and Culture", true, false, false, 300, now(), now()), 
+ ("Abramson Cancer Center", "Health and Medical", false, false, true, 700, now(), now())
     

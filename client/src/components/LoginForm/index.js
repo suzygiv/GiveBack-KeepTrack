@@ -55,6 +55,8 @@ class Form extends Component {
                     // this.setState({
                     //     redirectTo: '/welcome'
                     // })
+                    
+                    sessionStorage.setItem("email", this.state.email)
                     window.location.replace("/welcome");
                 }
             }).catch(error => {
@@ -115,8 +117,8 @@ class Form extends Component {
                                         />
                                     </div>
                                     <div style={{ textAlign: "center" }}>
-                                        < Button className="btn-primary custom-btn" style={{ marginBottom: "20px" }} onClick={this.handleSubmit}>Submit</Button>
-                                        < Button className="btn-primary custom-btn" style={{ marginBottom: "20px" }} href="/signup">Sign Up</Button>
+                                        < Button className="btn-primary custom-btn" style={{ margin: "5px", marginBottom: "20px" }} onClick={this.handleSubmit}>Submit</Button>
+                                        < Button className="btn-primary custom-btn" style={{ margin: "5px", marginBottom: "20px" }} href="/signup">Sign Up</Button>
                                     </div>
                                 </form>
                             </div>

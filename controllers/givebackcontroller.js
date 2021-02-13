@@ -35,5 +35,18 @@ module.exports = {
       .then(dbModel => dbModel.remove())
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
+  },
+  getChartData: function(req, res) {
+    db.Giveback
+    .findAll({
+      attributes: [
+        'category', 
+        [db.Sequelize.fn('sum', db.Sequelize.col('amount')), "totalAmount"]
+      ], 
+      group: ["category"]
+    }).then(function (result) { 
+      console.log(result)
+      res.json(result)
+    });
   }
 };

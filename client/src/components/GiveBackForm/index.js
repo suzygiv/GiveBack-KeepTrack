@@ -13,7 +13,7 @@ class GiveBackForm extends Component {
       employeeMatch: false,
       taxDeductible: false,
       receiptDocumentation: false,
-      Amount: "",
+      amount: "",
   };
 
 
@@ -46,7 +46,7 @@ handleSubmit = (event) => {
       employeeMatch: this.state.employeeMatch,
       taxDeductible: this.state.taxDeductible,
       receiptDocumentation: this.state.receiptDocumentation,
-      Amount: this.state.Amount
+      amount: this.state.amount
   })
       .then(response => {
           console.log(response)
@@ -132,8 +132,8 @@ handleSubmit = (event) => {
               <div className="form-group">
                 <label>Amount</label>
                 <input className="form-control" 
-                value={this.state.Amount} 
-                name="Amount" 
+                value={this.state.amount} 
+                name="amount" 
                 type="number" 
                 id="exampleFormControlInput1" 
                 placeholder=""

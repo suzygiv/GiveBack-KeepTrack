@@ -22,14 +22,17 @@ function KeepTrackChart(props) {
                 type: 'pie',
                 data: {
                     datasets: [{
-                        data
+                        data,
+                        backgroundColor: [
+                            'rgba(97, 218, 251)',
+                            'rgba(200, 239, 250)',
+                            'rgba(27, 157, 194)'
+                    ]
                     }],
+                    labels   
+                    },
                 
-                    // These labels appear in the legend and in the tooltips when hovering different arcs
-                    labels
-                    
-                },
-            });
+                });
         }
     return(
 <canvas ref={ctx}/>

@@ -70,9 +70,9 @@ handleSubmit = (event) => {
   render() {
   
       return (
-        <Container style={{display: "flex", justifyContent:"center"}}>
+        <Container style={{display: "flex", justifyContent:"center", marginTop: "20px"}}>
           <Row>
-            <div className="shadow bg-white rounded" style={{ maxWidth: "100%", padding: "50px", opacity: "1"}}>
+            <div className="shadow bg-white rounded" style={{ maxWidth: "100%", padding: "50px", fontFamily: "Montserrat, SansSerif"}}>
             <Col size="sm-12">
               <h1>Give Back</h1>
             </Col>
@@ -101,7 +101,7 @@ handleSubmit = (event) => {
                   </select>
                 </div>
                 <div className="form-check form-check-inline">
-                  <input
+                  <input style={{margin:"5px"}}
                       type="checkbox"
                       id="employeeMatch"
                       name="employeeMatch"
@@ -111,7 +111,7 @@ handleSubmit = (event) => {
                   <label className="form-check-label" for="inlineCheckbox1">Employee Match</label>
                 </div>
                 <div className="form-check form-check-inline">
-                  <input
+                  <input style={{margin:"5px"}}
                       type="checkbox"
                       id="taxDeductible"
                       name="taxDeductible"
@@ -121,7 +121,7 @@ handleSubmit = (event) => {
                   <label className="form-check-label" for="inlineCheckbox2">Tax Deductible</label>
                 </div>
                 <div className="form-check form-check-inline">
-                  <input
+                  <input style={{margin:"5px"}}
                       type="checkbox"
                       id="receiptDocumentation"
                       name="receiptDocumentation"
@@ -131,7 +131,7 @@ handleSubmit = (event) => {
                   <label className="form-check-label" for="inlineCheckbox3">Receipt &#38; Documentation</label>
                 </div>
                 <div className="form-group">
-                  <label>Amount</label>
+                  <label style={{marginTop:"10px"}}>Amount</label>
                   <input className="form-control" 
                   value={this.state.amount} 
                   name="amount" 

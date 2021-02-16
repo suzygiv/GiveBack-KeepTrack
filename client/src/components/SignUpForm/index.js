@@ -63,20 +63,34 @@ class Form extends Component {
     render() {
         // Notice how each input has a value, name, and onChange prop
         return (
+
             <div>
-                <Container style={{marginTop: "50px"}}>
+
+
+
+                <Container style={{ marginTop: "25vh" }}>
                     <Row>
-                        <Col size="md-6">
-                            <h5 style={{color: "#727382"}}>Hi, welcome to!</h5>
-                            <p style={{fontSize: "3.9rem", whiteSpace: "nowrap", fontFamily: "Source Sans Pro, sansSerif", marginBottom: "-20px"}}><span className="blue-text">give</span>back </p>
-                            <p style={{fontSize: "3.9rem", whiteSpace: "nowrap", fontFamily: "Source Sans Pro, sansSerif"}}>keep<span className="blue-text">track</span> </p>
-                            <h5 style={{color: "#727382"}}>Sign up with your details to continue</h5>
-                            
+                        <Col size="lg-6">
+
+                            <p style={{ fontSize: "3.8rem", fontWeight:"bold", whiteSpace: "nowrap", fontFamily: "Montserrat, SansSerif", marginBottom: "-35px", marginTop: "50px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)" }}><span style={{ color: "#80CDDF" }}>give</span>back </p>
+                            <p style={{ fontSize: "4.0rem", fontWeight:"bold", whiteSpace: "nowrap", fontFamily: "Montserrat, sansSerif", marginBottom: "20px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)" }}>keep<span style={{ color: "#80CDDF" }}>track</span> </p>
+
+
                         </Col>
-                        <Col size="md-6">
-                    <div className="shadow rounded" style={{ maxWidth: "100%", padding: "50px", opacity: "1"}}>
-                    <h3 style={{textAlign: "center", marginBottom: "20px", fontFamily: "Source Sans Pro, sansSerif"}}>Sign Up</h3>
-                    <form className="form">
+
+                        <Col size="lg-6">
+                            <div className="shadow bg-white rounded" style={{ maxWidth: "100%", padding: "50px", opacity: "1" }}>
+                                {/* <div><img
+                                    alt=""
+                                    src={process.env.PUBLIC_URL + "/images/logo.png"}
+                                    width="60px"
+                                    height="60px"
+                                    className="d-inline-block align-top"
+                                />
+                                </div> */}
+                                <h3 style={{ textAlign: "center", marginBottom: "20px", fontFamily: "Source Sans Pro, sansSerif" }}>Sign Up</h3>
+
+                                <form className="form">
                     <div style={{textAlign: "center"}}>
                         <input style={{marginBottom: "20px"}}
                             value={this.state.email}
@@ -97,8 +111,8 @@ class Form extends Component {
                         />
                         </div>
                         <div style={{textAlign: "center"}}>
-                        < Button className="btn-primary custom-btn" style={{ margin: "5px", marginBottom: "20px" }} variant="dark" onClick={this.handleSubmit}>Submit</Button>
-                        < Button className="btn-primary custom-btn" style={{ margin: "5px", marginBottom: "20px" }} variant="dark" href="/">Login</Button>
+                        < Button className="btn-primary custom-btn" style={{ margin: "5px", marginBottom: "20px" }} variant="dark" onClick={this.handleSubmit}>Sign Up</Button>
+                        < Button className="btn-secondary custom-btn" style={{ margin: "5px", marginBottom: "20px" }} variant="dark" href="/">Login</Button>
                         </div>
                     </form>
                     <Modal
@@ -120,17 +134,17 @@ class Form extends Component {
                         <Button className="btn-primary custom-btn" variant="primary" a href="/">Login</Button>
                         </Modal.Footer>
                     </Modal>
-                    </div>
-                    </Col>
+                    
+                            </div>
+                        </Col>
                     </Row>
-                    
-                   
-                    
-                </Container>            
-                </div>
+
+
+
+                </Container>
+            </div>
         );
     }
+    
 }
 export default Form;
-
-//we'll need to add a checkbox option here later

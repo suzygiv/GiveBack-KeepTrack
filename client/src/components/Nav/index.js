@@ -22,8 +22,8 @@ function Nav() {
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                 <Link className="nav-link navRight"to="/">Login <span className="sr-only">(current)</span></Link>
-                <Link className="nav-link navRight" to="/givebackentry">GiveBack</Link>
-                <Link className="nav-link navRight" to="/keeptrack">KeepTrack</Link>
+                <Link className="nav-link navRight" to="/givebackentry">Giveback</Link>
+                <Link className="nav-link navRight" to="/keeptrack">Keeptrack</Link>
                 <Link className="nav-link navRight" to="/">Logout</Link>
                 
             </Navbar.Collapse>

@@ -11,7 +11,7 @@ import "./styles.css";
 function WelcomeContainer() {
     return (
         <>
-<Container style={{display: "flex", justifyContent: "center", marginBottom:"50px", marginTop:"20px"}}>
+<Container style={{display: "flex", justifyContent: "center", marginBottom:"70px", marginTop:"20px"}}>
   {/* <div className="shadow bg-white rounded" style={{ maxWidth: "100%", padding: "50px"}}> */}
         <div>
             
@@ -19,8 +19,8 @@ function WelcomeContainer() {
     
         <Col size="md-12">
           <div>
-        <p style={{fontSize: "3.0rem", whiteSpace: "nowrap", fontFamily: "Montserrat, SansSerif", marginBottom: "-35px"}}><span style={{color: "#50BCD5" }}>give</span>back </p>
-        <p style={{fontSize: "3.0rem", whiteSpace: "nowrap", fontFamily: "Montserrat, sansSerif", marginBottom:"20px"}}>keep<span style={{color: "#50BCD5" }}>track</span> </p>
+          <p style={{ fontSize: "3rem", fontWeight:"bold", whiteSpace: "nowrap", fontFamily: "Montserrat, SansSerif", marginBottom: "-35px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)"}}><span style={{ color: "#51BBD5" }}>give</span>back </p>
+                            <p style={{ fontSize: "3rem", fontWeight:"bold", whiteSpace: "nowrap", fontFamily: "Montserrat, sansSerif", marginBottom: "20px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)"}}>keep<span style={{ color: "#51BBD5" }}>track</span> </p>
         </div>
           </Col>
           
@@ -29,8 +29,8 @@ function WelcomeContainer() {
         <Col size="md-12">
           <div>
             {/* get request to get username ? */}
-            <p style={{fontSize: "1.3rem"}}>Welcome {sessionStorage.getItem("email")}! You've donated x amount so far. Great job!</p>
-            <p style={{fontSize: "1.2rem"}}> What would you like to do?</p>
+            <p style={{fontSize: "1.3rem", fontFamily: "Montserrat, SansSerif", backgroundColor:"white"}}>Welcome {sessionStorage.getItem("email")}! You've donated x amount so far. Great job!</p>
+            <p style={{fontSize: "1.2rem", fontFamily: "Montserrat, SansSerif", backgroundColor:"white"}}> What would you like to do?</p>
             <div>
             <Link to="/givebackentry">
             <button style={{margin:"10px"}}className="btn btn-primary custom-btn"> 
@@ -51,7 +51,8 @@ function WelcomeContainer() {
 
 </div>
 </Container>
-<Container style={{display: "flex", justifyContent:"center", flexDirection:"row", padding:"50px", paddingBottom:"100%", backgroundColor: "#50BCD5", maxWidth:"100%", margin:"0 auto", maxHeight: "100%"}}>
+{/* backgroundColor: "#50BCD5", */}
+<Container style={{display: "flex", justifyContent:"center", flexDirection:"row", padding:"50px", paddingBottom:"35vh", backgroundColor: "#50BCD5", maxWidth:"100%", margin:"0 auto", fontFamily: "Montserrat, SansSerif"}}>
   <div>
 <Row> 
     

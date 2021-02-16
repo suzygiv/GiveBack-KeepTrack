@@ -1,37 +1,47 @@
 import React from "react";
+import Row from "../Row";
+import Col from "../Col";
 // import GiveBackForm from "../GiveBackForm";
 //import routes at some point? before the function for the KeepTrackCard
 
 // if employeeMatch is true, then render "employee match"
 
 function KeepTrackCard(props) {
+  
   return (
-    <div className="card mb-4 text-center">
-      <div className="card-header">
+    <Row>
+      <Col size="md-12">
+      <div className="shadow bg-white rounded" style={{ maxWidth: "100%", padding: "50px", fontFamily: "Montserrat, SansSerif" }}>
+    <div >
+      <div >
         {props.Organization}
       </div>
-      <div className="card-body">
-        <h5 className="card-title">{props.amount}</h5>
-        <p className="card-text">{props.category}<br />
+      <div >
+        <h5 >{props.amount}</h5>
+        <p >{props.category}<br />
         <br />
-        {
+        &#9733;{
         (props.employeeMatch === true )
         ? " Employee Matched "
         : ""
         }
-        &#9733;{
+        {
         (props.taxDeductible === true )
         ? " Tax Deductible "
         : ""
         }
-        &#9733;{
+       {
         (props.receiptDocumentation === true )
         ? " Has Documentation " 
         : ""
-        }
+        }&#9733;
         </p>
       </div>
     </div>
+    </div>
+      </Col>
+    </Row>
+    
   );
 }
 

@@ -38,7 +38,10 @@ function KeepTrackChart(props) {
                 });
         }
     return(
-<canvas ref={ctx}/>
+<div 
+// className="chart-container" style="height:40vh;"
+><canvas ref={ctx}/>
+</div>
 )
 }
 

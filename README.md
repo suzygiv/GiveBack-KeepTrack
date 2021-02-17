@@ -11,7 +11,7 @@ GiveBack KeepTrack is a full stack application built with React JS. Users can ke
 * [Usage](#usage)
 * [Screenshot](#screenshot)
 * [License](#license)
-* [Contributing](#contributing)
+* [Contributors](#contributors)
 * [Tests](#tests)
 * [Questions](#questions)
   

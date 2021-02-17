@@ -52,12 +52,12 @@ class Form extends Component {
 
 
 
-                <Container style={{ marginTop: "25vh" }}>
+                <Container style={{ marginTop: "7vh" }}>
                     <Row>
                         <Col size="lg-6">
 
-                            <p style={{ fontSize: "3.8rem", fontWeight: "bold", whiteSpace: "nowrap", fontFamily: "Montserrat, SansSerif", marginBottom: "-35px", marginTop: "50px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)" }}><span style={{ color: "#80CDDF" }}>give</span>back </p>
-                            <p style={{ fontSize: "4.0rem", fontWeight: "bold", whiteSpace: "nowrap", fontFamily: "Montserrat, sansSerif", marginBottom: "20px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)" }}>keep<span style={{ color: "#80CDDF" }}>track</span> </p>
+                            <p style={{ fontSize: "3rem", fontWeight: "bold", whiteSpace: "nowrap", fontFamily: "Montserrat, SansSerif", marginBottom: "-35px", marginTop: "25px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)" }}><span style={{ color: "#80CDDF" }}>give</span>back </p>
+                            <p style={{ fontSize: "3rem", fontWeight: "bold", whiteSpace: "nowrap", fontFamily: "Montserrat, sansSerif", marginBottom: "20px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)" }}>keep<span style={{ color: "#80CDDF" }}>track</span> </p>
 
 
                         </Col>

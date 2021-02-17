@@ -1,5 +1,3 @@
-//this will change, and is just a placeholder to make sure the pages work
-
 import React from "react";
 
 function Card(props) {

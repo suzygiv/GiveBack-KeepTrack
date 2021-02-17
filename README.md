@@ -20,8 +20,11 @@ Install npm packages as usual, and all dependencies.
 After installing all depenencies, start the server. Then, open the app in your browser. As it is, you'll use local host 3000 for the front end; the back end uses 3001.
 
 ## Screeshots
-![Screenshot Template](screenshot location . png)
-
+![Login Page](./readmeImages/login.png)
+![Signup Page](./readmeImages/signup.png)
+![Welcome Page](./readmeImages/welcome.png)
+![GiveBack Page](./readmeImages/giveback.png)
+![KeepTrack Page](./readmeImages/keeptrack.png)
 
 ## License
 MIT License
@@ -53,13 +56,13 @@ MIT License
 None yet.
 
 ## Questions
-Any questions can be directed to us, found at the following:
-Alexandra Hionis
-GitHub:
-Email:
-Suzy Givnish
-GitHub:
-Email:
-Alison Lubar
-GitHub: https://github.com/theoriginalison
-Email: aslubar@gmail.com
+Any questions can be directed to us, found at the following: 
+<br />Alexandra Hionis
+<br />GitHub: https://github.com/Alexandra-Hionis
+<br />Email: alexandra.hionis@gmail.com
+<br />Suzy Givnish
+<br />GitHub: https://github.com/suzygiv
+<br />Email: suzannegivnish@gmail.com
+<br />Alison Lubar
+<br />GitHub: https://github.com/theoriginalison
+<br />Email: aslubar@gmail.com

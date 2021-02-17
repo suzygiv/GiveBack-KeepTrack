@@ -1,10 +1,6 @@
 import React from "react";
 import Row from "../Row";
 import Col from "../Col";
-// import GiveBackForm from "../GiveBackForm";
-//import routes at some point? before the function for the KeepTrackCard
-
-// if employeeMatch is true, then render "employee match"
 
 function KeepTrackCard(props) {
   

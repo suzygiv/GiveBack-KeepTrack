@@ -3,7 +3,6 @@ const router = require("express").Router();
 const apiRoutes = require("./api/auth");
 const submissiondbRoutes = require("./api/submissiondb")
 
-
 // API Routes
 router.use("/api/auth", apiRoutes);
 router.use("/api", submissiondbRoutes);

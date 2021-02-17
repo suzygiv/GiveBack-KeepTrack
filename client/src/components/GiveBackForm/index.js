@@ -20,14 +20,6 @@ class GiveBackForm extends Component {
 
 
   handleInputChange = event => {
-      // Getting the value and name of the input which triggered the change
-  //     let value = event.target.value;
-  //     const name = event.target.name;
-  //     // Updating the input's state
-  //     this.setState({
-  //         [name]: value
-  //     });
-  // }
   const target = event.target;
   const value = target.type === 'checkbox' ? target.checked : target.value;
   const name = target.name;
@@ -54,8 +46,6 @@ handleSubmit = (event) => {
           console.log(response)
           if (response.data) {
               console.log('successful submission')
-              // this.setState({
-              //     redirectTo: '/login'
                this.setState({playConfetti: true})
                setTimeout(function(){ window.location.replace("/keeptrack")}, 5000);
           } else {

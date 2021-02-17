@@ -2,9 +2,6 @@ import React, {useRef, useEffect, useState} from "react";
 import Chart from 'chart.js';
 import axios from 'axios';
 
-// larger issue-- need to total by category
-// use the chart.js documentation to customize
-
 function KeepTrackChart(props) {
     const [data, setData]=useState([])
     const [labels, setLabels]=useState([])
@@ -39,7 +36,6 @@ function KeepTrackChart(props) {
         }
     return(
 <div 
-// className="chart-container" style="height:40vh;"
 ><canvas ref={ctx}/>
 </div>
 )

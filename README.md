@@ -51,10 +51,10 @@ MIT License
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 
-## Contributing
+## Contributors
 
-* **[Alison Lubar]** 
-* **Alexandra Hionis** 
+* **[Alison Lubar](https://github.com/theoriginalison)** 
+* **[Alexandra Hionis](https://github.com/Alexandra-Hionis)** 
 * **[Suzanne Givnish](https://github.com/suzygiv)** 
 
 ## Tests

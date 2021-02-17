@@ -53,6 +53,9 @@ MIT License
 
 ## Contributing
 
+* **[Alison Lubar]** 
+* **Alexandra Hionis** 
+* **[Suzanne Givnish](https://github.com/suzygiv)** 
 
 ## Tests
 None yet.

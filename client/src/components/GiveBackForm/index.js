@@ -47,7 +47,7 @@ handleSubmit = (event) => {
           if (response.data) {
               console.log('successful submission')
                this.setState({playConfetti: true})
-               setTimeout(function(){ window.location.replace("/keeptrack")}, 5000);
+               setTimeout(function(){ window.location.replace("/welcome")}, 5000);
           } else {
               console.log('Submission error');
           }

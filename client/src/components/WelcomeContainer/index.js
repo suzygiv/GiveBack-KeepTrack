@@ -8,13 +8,13 @@ import "./styles.css";
 
 
 
+
 function WelcomeContainer() {
     return (
         <>
 <Container style={{display: "flex", justifyContent: "center", marginBottom:"70px", marginTop:"20px"}}>
   {/* <div className="shadow bg-white rounded" style={{ maxWidth: "100%", padding: "50px"}}> */}
-        <div>
-            
+        <div>      
   <Row>
     
         <Col size="md-12">

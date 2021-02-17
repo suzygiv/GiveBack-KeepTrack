@@ -4,6 +4,7 @@ import Col from "../Col";
 import Container from "../Container";
 import Button from 'react-bootstrap/Button';
 import axios from "axios";
+import Confetti from "../Confetti";
 
 class GiveBackForm extends Component {
 // Setting the component's initial state
@@ -14,6 +15,7 @@ class GiveBackForm extends Component {
       taxDeductible: false,
       receiptDocumentation: false,
       amount: "",
+      playConfetti: false,
   };
 
 
@@ -54,9 +56,8 @@ handleSubmit = (event) => {
               console.log('successful submission')
               // this.setState({
               //     redirectTo: '/login'
-              // })
-              window.location.replace("/welcome");
-              // add confetti npm when successfully submitted
+               this.setState({playConfetti: true})
+               setTimeout(function(){ window.location.replace("/keeptrack")}, 5000);
           } else {
               console.log('Submission error');
           }
@@ -68,9 +69,10 @@ handleSubmit = (event) => {
 
 
   render() {
-  
+
       return (
         <Container style={{display: "flex", justifyContent:"center", marginTop: "20px"}}>
+          <Confetti run={this.state.playConfetti}/>
           <Row>
             <div className="shadow bg-white rounded" style={{ maxWidth: "100%", padding: "50px", fontFamily: "Montserrat, SansSerif"}}>
             <Col size="sm-12">

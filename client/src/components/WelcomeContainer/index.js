@@ -19,21 +19,20 @@ function WelcomeContainer() {
     
         <Col size="md-12">
           <div>
-          <p style={{ fontSize: "3rem", fontWeight:"bold", whiteSpace: "nowrap", fontFamily: "Montserrat, SansSerif", marginBottom: "-35px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)"}}><span style={{ color: "#51BBD5" }}>give</span>back </p>
-                            <p style={{ fontSize: "3rem", fontWeight:"bold", whiteSpace: "nowrap", fontFamily: "Montserrat, sansSerif", marginBottom: "20px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)"}}>keep<span style={{ color: "#51BBD5" }}>track</span> </p>
-        </div>
+          <p className="gbkt-title" id="give"><span className="give-span">give</span>back </p>
+          <p className="gbkt-title" id="keep">keep<span className="track-span">track</span> </p>
+ </div>
           </Col>
           
           </Row>
       <Row>
         <Col size="md-12">
           <div>
-            {/* get request to get username ? */}
-            <p style={{fontSize: "1.3rem", fontFamily: "Montserrat, SansSerif", backgroundColor:"white"}}>Welcome {sessionStorage.getItem("email")}! You've donated ${sessionStorage.getItem("sumTotal")} so far. Great job!</p>
-            <p style={{fontSize: "1.2rem", fontFamily: "Montserrat, SansSerif", backgroundColor:"white"}}> What would you like to do?</p>
+            <p className="welcome-font">Welcome {sessionStorage.getItem("email")}! You've donated ${sessionStorage.getItem("sumTotal")} so far. Great job!</p>
+            <p className="welcome-font"> What would you like to do?</p>
             <div>
             <Link to="/givebackentry">
-            <button style={{margin:"10px"}}className="btn btn-primary custom-btn"> 
+            <button className="btn btn-primary custom-btn" id="btn-space"> 
                 Give Back
             </button>
              </Link>  
@@ -51,13 +50,13 @@ function WelcomeContainer() {
 
 </div>
 </Container>
-{/* backgroundColor: "#50BCD5", */}
+
 <Container style={{display: "flex", justifyContent:"center", flexDirection:"row", padding:"50px", paddingBottom:"35vh", backgroundColor: "#50BCD5", maxWidth:"100%", margin:"0 auto", fontFamily: "Montserrat, SansSerif"}}>
   <div>
 <Row> 
     
         <Col size="md-4"> 
-        <div style={{padding:"40px"}}> 
+        <div className="bottom-welcome-icons"> 
         <div>
         <img
         alt=""
@@ -73,7 +72,7 @@ function WelcomeContainer() {
       </Col>
 <Col size="md-4">  
             
-     <div style={{padding:"40px"}}> 
+     <div className="bottom-welcome-icons"> 
        
         <img
         alt=""
@@ -89,7 +88,7 @@ function WelcomeContainer() {
 </Col>
 <Col size="md-4">  
             
-<div style={{padding:"40px"}}> 
+<div className="bottom-welcome-icons"> 
         <div>
         <img
         alt=""

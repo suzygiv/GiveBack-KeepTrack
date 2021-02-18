@@ -1,7 +1,7 @@
 # GiveBack KeepTrack
 ![Badge for MIT](https://img.shields.io/badge/license-MIT-green)
 
-Deployed Heroku link: https://frozen-river-69538.herokuapp.com/
+Deployed Heroku link: https://giveback-keeptrack.herokuapp.com/
 
 ## Description
 GiveBack KeepTrack is a full stack application built with React JS. Users can keep track of their charitable donations throughout the year, including details such as category, tax deducible, employer matched, and receipts/documentation. [Link to the deployed application]

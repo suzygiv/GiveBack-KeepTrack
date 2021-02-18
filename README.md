@@ -4,7 +4,7 @@
 Deployed Heroku link: https://giveback-keeptrack.herokuapp.com/
 
 ## Description
-GiveBack KeepTrack is a full stack application built with React JS. Users can keep track of their charitable donations throughout the year, including details such as category, tax deducible, employer matched, and receipts/documentation. [Link to the deployed application]
+GiveBack KeepTrack is a full stack application built with React JS. Users can keep track of their charitable donations throughout the year, including details such as category, tax deductible, employer matched, and receipts/documentation. [Link to the deployed application]
 
 ## Table of Contents
 * [Installation](#installation)

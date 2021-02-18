@@ -1,15 +1,54 @@
-
-.btn-primary.custom-btn {
-  background-color:  #F2F2F2;
-  border-color: #51BBD5;
-  color: #51BBD5;
+.gbkt-title {
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: "Montserrat", SansSerif;
+  text-shadow: 2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+  }
   
-}
-
-.btn-primary.custom-btn:hover {
-  background-color: #51BBD5;
-}
-
-
-
-
+  #give {
+  margin-bottom: -35px;
+  margin-top: 25px;
+  }
+  
+  .give-span {
+  color: #80CDDF;
+  }
+  
+  .track-span {
+    color: #80CDDF;
+  }
+    
+  #keep {
+    margin-bottom: 20px;
+  }
+  
+  .login-signup{
+    text-align: center;
+    margin-bottom: 20px; 
+    font-family: "Source Sans Pro", sansSerif;
+  }
+  
+  #login-div {
+    max-width: 100%;
+    padding: 50px; 
+  }
+  
+  .input-form-margin {
+      margin-bottom: 20px;
+  }
+  
+  .login-signup-btns{
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+  .btn-primary.custom-btn {
+    background-color:  #F2F2F2;
+    border-color: #51BBD5;
+    color: #51BBD5;
+    
+  }
+  
+  .btn-primary.custom-btn:hover {
+    background-color: #51BBD5;
+  }

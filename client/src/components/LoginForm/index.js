@@ -56,19 +56,19 @@ class Form extends Component {
                     <Row>
                         <Col size="lg-6">
 
-                            <p style={{ fontSize: "3rem", fontWeight: "bold", whiteSpace: "nowrap", fontFamily: "Montserrat, SansSerif", marginBottom: "-35px", marginTop: "25px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)" }}><span style={{ color: "#80CDDF" }}>give</span>back </p>
-                            <p style={{ fontSize: "3rem", fontWeight: "bold", whiteSpace: "nowrap", fontFamily: "Montserrat, sansSerif", marginBottom: "20px", textShadow: "2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)" }}>keep<span style={{ color: "#80CDDF" }}>track</span> </p>
+                            <p className="gbkt-title" id="give"><span className="give-span">give</span>back </p>
+                            <p className="gbkt-title" id="keep">keep<span className="track-span">track</span> </p>
 
 
                         </Col>
 
                         <Col size="lg-6">
-                            <div className="shadow bg-white rounded" style={{ maxWidth: "100%", padding: "50px" }}>
-                                <h3 style={{ textAlign: "center", marginBottom: "20px", fontFamily: "Source Sans Pro, sansSerif" }}>Login</h3>
+                            <div className="shadow bg-white rounded" id="login-div">
+                                <h3 className="login-signup">Login</h3>
 
                                 <form>
-                                    <div style={{ textAlign: "center" }}>
-                                        <input style={{ marginBottom: "20px" }}
+                                    <div>
+                                        <input className="input-form-margin"
                                             value={this.state.email}
                                             name="email"
                                             onChange={this.handleInputChange}
@@ -76,8 +76,8 @@ class Form extends Component {
                                             placeholder="Email"
                                         />
                                     </div>
-                                    <div style={{ textAlign: "center" }}>
-                                        <input style={{ marginBottom: "20px" }}
+                                    <div>
+                                        <input className="input-form-margin"
                                             value={this.state.password}
                                             name="password"
                                             onChange={this.handleInputChange}
@@ -85,9 +85,9 @@ class Form extends Component {
                                             placeholder="Password"
                                         />
                                     </div>
-                                    <div style={{ textAlign: "center" }}>
-                                        < Button className="btn-primary custom-btn" style={{ margin: "5px", marginBottom: "20px" }} onClick={this.handleSubmit}>Login</Button>
-                                        < Button className="btn-secondary custom-btn" style={{ margin: "5px", marginBottom: "20px" }} href="/signup">Sign Up</Button>
+                                    <div>
+                                        < Button className="btn-primary custom-btn login-signup-btns" onClick={this.handleSubmit}>Login</Button>
+                                        < Button className="btn-secondary custom-btn login-signup-btns" href="/signup">Sign Up</Button>
                                     </div>
                                 </form>
                             </div>

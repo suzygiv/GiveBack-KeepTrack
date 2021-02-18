@@ -5,6 +5,7 @@ import Container from "../Container";
 import Button from 'react-bootstrap/Button';
 import axios from "axios";
 import Confetti from "../Confetti";
+import "./style.css";
 
 class GiveBackForm extends Component {
 // Setting the component's initial state
@@ -93,7 +94,7 @@ handleSubmit = (event) => {
                   </select>
                 </div>
                 <div className="form-check form-check-inline">
-                  <input style={{margin:"5px"}}
+                  <input className="checkbox-margin"
                       type="checkbox"
                       id="employeeMatch"
                       name="employeeMatch"
@@ -103,7 +104,7 @@ handleSubmit = (event) => {
                   <label className="form-check-label" for="inlineCheckbox1">Employee Match</label>
                 </div>
                 <div className="form-check form-check-inline">
-                  <input style={{margin:"5px"}}
+                  <input className="checkbox-margin"
                       type="checkbox"
                       id="taxDeductible"
                       name="taxDeductible"
@@ -113,7 +114,7 @@ handleSubmit = (event) => {
                   <label className="form-check-label" for="inlineCheckbox2">Tax Deductible</label>
                 </div>
                 <div className="form-check form-check-inline">
-                  <input style={{margin:"5px"}}
+                  <input className="checkbox-margin"
                       type="checkbox"
                       id="receiptDocumentation"
                       name="receiptDocumentation"
@@ -123,7 +124,7 @@ handleSubmit = (event) => {
                   <label className="form-check-label" for="inlineCheckbox3">Receipt &#38; Documentation</label>
                 </div>
                 <div className="form-group">
-                  <label style={{marginTop:"10px"}}>Amount</label>
+                  <label className="amount-margin">Amount</label>
                   <input className="form-control" 
                   value={this.state.amount} 
                   name="amount" 

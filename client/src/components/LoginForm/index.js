@@ -52,18 +52,32 @@ class Form extends Component {
 
 
 
-                <Container style={{ marginTop: "7vh" }}>
+                <Container>
+                <div className="shadow rounded login-wrap-div">
                     <Row>
-                        <Col size="lg-6">
+                    <Col size="lg-2"></Col>
+                        <Col size="lg-4">
+                            
+    <div>
 
+            
                             <p className="gbkt-title" id="give"><span className="give-span">give</span>back </p>
                             <p className="gbkt-title" id="keep">keep<span className="track-span">track</span> </p>
-
-
+                            <p className="catch-phrase">Life can be messy.</p>
+                            <p className="catch-phrase catch-phrase-spacing">Keep your donations organized!</p>
+                         <div>  <img
+        alt=""
+        src={process.env.PUBLIC_URL+"/images/icon-circles-removebg.png"} 
+        to="/welcome"
+        width="170"
+        height="72"
+        className="d-inline-block align-top circle-icons"
+      /> </div> 
+</div>
                         </Col>
 
-                        <Col size="lg-6">
-                            <div className="shadow bg-white rounded" id="login-div">
+                        <Col size="lg-5"> 
+                            <div className="round bg-white shadow" id="login-div">
                                 <h3 className="login-signup">Login</h3>
 
                                 <form>
@@ -91,10 +105,12 @@ class Form extends Component {
                                     </div>
                                 </form>
                             </div>
+                            
                         </Col>
+                        <Col size="lg-1"></Col>
                     </Row>
 
-
+                    </div>
 
                 </Container>
             </div>

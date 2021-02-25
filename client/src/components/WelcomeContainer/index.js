@@ -28,7 +28,7 @@ function WelcomeContainer() {
       <Row>
         <Col size="md-12">
           <div>
-            <p className="welcome-font">Welcome {sessionStorage.getItem("email")}! You've donated ${sessionStorage.getItem("sumTotal")} so far. Great job!</p>
+            <p className="welcome-font">Welcome <span id="email-welcome">{sessionStorage.getItem("email")}</span>! You've donated <span id="amount-welcome">${sessionStorage.getItem("sumTotal")} </span> so far. Great job!</p>
             <p className="welcome-font"> What would you like to do?</p>
             <div>
             <Link to="/givebackentry">
@@ -51,7 +51,7 @@ function WelcomeContainer() {
 </div>
 </Container>
 
-<Container style={{display: "flex", justifyContent:"center", flexDirection:"row", padding:"50px", paddingBottom:"35vh", backgroundColor: "#50BCD5", maxWidth:"100%", margin:"0 auto", fontFamily: "Montserrat, SansSerif"}}>
+<Container style={{display: "flex", justifyContent:"center", flexDirection:"row", padding:"50px", paddingBottom:"50vh", backgroundColor: "#50BCD5", maxWidth:"100%", margin:"0 auto", fontFamily: "Montserrat, SansSerif"}}>
   <div>
 <Row> 
     

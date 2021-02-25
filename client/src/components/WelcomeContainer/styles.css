@@ -1,24 +1,24 @@
 body { overflow-x: hidden !important;}
 
 .gbkt-title {
-  font-size: 3rem;
+  font-size: 2.5em;
   font-weight: bold;
   white-space: nowrap;
-  font-family: "Montserrat", SansSerif;
+  font-family: "Montserrat", sans-serif;
   text-shadow: 2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
 }
 
 #give {
-  margin-bottom: -35px;
-  margin-top: 25px;
+  margin-bottom: -25px;
+  margin-top: 15px;
 }
 
 .give-span {
-  color: #80CDDF;
+  color: #50BCD5;
 }
 
 .track-span {
-  color: #80CDDF;
+  color: #50BCD5;
 }
   
 #keep {
@@ -27,7 +27,7 @@ body { overflow-x: hidden !important;}
 
 .welcome-font {
 font-size: 1.3rem; 
-font-family: "Montserrat", SansSerif; 
+font-family: "Montserrat", sans-serif; 
 background-color:white;
 }
 
@@ -51,3 +51,12 @@ background-color:white;
  padding:40px;
 }
 
+#email-welcome{
+  color: #212629;
+  font-weight: bold;
+}
+
+#amount-welcome{
+  color: #212629;
+  font-weight: bold;
+}

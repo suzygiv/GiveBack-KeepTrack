@@ -3,81 +3,81 @@
   font-weight: bold;
   white-space: nowrap;
   font-family: "Montserrat", sans-serif;
-  text-shadow: 2px 5px 4px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
-  }
-  
-  #give {
+  text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+#give {
   margin-bottom: -25px;
   margin-top: 15px;
-  }
-  
-  .give-span {
-  color: #80CDDF;
-  }
-  
-  .track-span {
-    color: #80CDDF;
-  }
-    
-  #keep {
-    margin-bottom: 20px;
-  }
-  
-  .signup-wrap-div {
-    background-color: #F7F7F7; 
-    padding: 60px 0px 80px 0px; 
-    margin-top:10vh;
-  }
-
-  .login-signup{
-    text-align: center;
-    margin-bottom: 20px; 
-    font-family: "Source Sans Pro", sans-serif;
-  }
-  
-  #signup-div {
-    margin: 0 20px 0 20px;
-    padding: 50px; 
-  }
-
-  .input-form-margin {
-    margin-bottom: 20px;
-    width: 80%;
 }
-  .login-signup-btns{
-    margin: 5px;
-    margin-bottom: 20px;
-  }
+
+.give-span {
+  color: #80cddf;
+}
+
+.track-span {
+  color: #80cddf;
+}
+
+#keep {
+  margin-bottom: 20px;
+}
+
+.signup-wrap-div {
+  background-color: #f7f7f7;
+  padding: 60px 0px 80px 0px;
+  margin-top: 10vh;
+}
+
+.login-signup {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#signup-div {
+  margin: 0 20px 0 20px;
+  padding: 50px;
+}
+
+.input-form-margin {
+  margin-bottom: 20px;
+  width: 80%;
+}
+.login-signup-btns {
+  margin: 5px;
+  margin-bottom: 20px;
+}
 
 .btn-primary.custom-btn {
-    background-color:  white;
-    border-color: #51BBD5;
-    color: #51BBD5;
-    
-  }
- 
-  .btn-primary.custom-btn:hover {
-    background-color: #51BBD5;
-  }
+  background-color: white;
+  border-color: #51bbd5;
+  color: #51bbd5;
+}
 
-  .btn-secondary.custom-btn {
-    background-color:  white;
-    border-color: #727382;
-    color: #727382;
-    
-  }
- 
-  .btn-secondary.custom-btn:hover {
-    background-color: #727382;
-  }
+.btn-primary.custom-btn:hover {
+  background-color: #51bbd5;
+  color: white;
+}
 
-  .blue-text {
-    color: #51BBD5;
-  }
+.btn-secondary.custom-btn {
+  background-color: white;
+  border-color: #727382;
+  color: #727382;
+}
 
+.btn-secondary.custom-btn:hover {
+  background-color: #727382;
+  color: white;
+}
+
+.blue-text {
+  color: #51bbd5;
+}
 
 .catch-phrase {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #727482;

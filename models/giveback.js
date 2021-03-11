@@ -31,7 +31,10 @@ module.exports = function(sequelize, DataTypes) {
     
     amount: {
       type: DataTypes.INTEGER,
-      defaultValue: 0
+      defaultValue: 0,
+      validate: {
+        min: 0,
+      }
     }
   });
  

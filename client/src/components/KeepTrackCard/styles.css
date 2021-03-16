@@ -1,0 +1,10 @@
+.btn-danger.custom-btn {
+  background-color: white;
+  border-color: #dd3444;
+  color: #dd3444;
+}
+
+.btn-danger.custom-btn:hover {
+  background-color: #dd3444;
+  color: white;
+}

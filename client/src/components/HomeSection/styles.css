@@ -3,20 +3,13 @@
   padding-bottom: 22vh;
 }
 
-.gbkt-title {
-  font-size: 2.5em;
-  font-weight: bold;
-  white-space: nowrap;
-  font-family: "Montserrat", sans-serif;
-}
-
 #give-spacing {
-  margin-bottom: -45px;
+  margin-bottom: -40px;
 }
 
 #gbkt-main-header {
-  margin-top: 80px;
-  font-size: 25px;
+  margin-top: 50px;
+  font-size: 23px;
 }
 #phone-img {
   max-width: 100%;
@@ -25,6 +18,9 @@
 
 #home-header {
   font-weight: bold;
+  padding-left: 20px;
+  font-size: 2em;
+  word-wrap: none;
 }
 
 .gbkt-title-home {
@@ -37,4 +33,5 @@
 .home-header-subfont {
   font-family: "Montserrat", Sans-serif;
   word-wrap: none;
+  padding-left: 10px;
 }

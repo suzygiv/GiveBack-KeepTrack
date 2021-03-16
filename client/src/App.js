@@ -1,21 +1,22 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import './App.css';
-import Login from "./pages/login"
-import Signup from "./pages/signup"
-import GiveBack from "./pages/givebackentry"
-import KeepTrack from "./pages/keeptrack"
-import Welcome from "./pages/welcome"
-import Nav from "./components/Nav"
+import "./App.css";
+import Home from "./pages/home";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
+import GiveBack from "./pages/givebackentry";
+import KeepTrack from "./pages/keeptrack";
+import Welcome from "./pages/welcome";
+import Nav from "./components/Nav";
 
 function Wrapper(props) {
   return (
     <>
-      <Nav/>
+      <Nav />
       {props.children}
       {/* <Footer/> */}
     </>
-  )
+  );
 }
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
         <div>
           <Switch>
             <Route exact path="/signup" component={Signup} />
-            <Route exact path="/" component={Login} />
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/" component={Home} />
             <Wrapper>
               <Route exact path="/welcome" component={Welcome} />
               <Route exact path="/givebackentry" component={GiveBack} />

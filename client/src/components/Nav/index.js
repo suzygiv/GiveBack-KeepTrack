@@ -28,13 +28,10 @@ function Nav() {
         <ReactBootstrap.Navbar.Collapse id="responsive-navbar-nav">
           <ReactBootstrap.Nav className="mr-auto"></ReactBootstrap.Nav>
           <ReactBootstrap.Nav>
-            <ReactBootstrap.Nav.Link href="/about">
-              About
-            </ReactBootstrap.Nav.Link>
-            <ReactBootstrap.Nav.Link eventKey={2} href="/givebackentry">
+            <ReactBootstrap.Nav.Link href="/givebackentry">
               Giveback
             </ReactBootstrap.Nav.Link>
-            <ReactBootstrap.Nav.Link eventKey={2} href="/keeptrack">
+            <ReactBootstrap.Nav.Link eventKey={1} href="/keeptrack">
               Keeptrack
             </ReactBootstrap.Nav.Link>
             <ReactBootstrap.Nav.Link eventKey={2} href="/">

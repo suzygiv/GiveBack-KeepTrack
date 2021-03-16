@@ -1,0 +1,40 @@
+#home {
+  background-color: #e5ecee;
+  padding-bottom: 22vh;
+}
+
+.gbkt-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+}
+
+#give-spacing {
+  margin-bottom: -45px;
+}
+
+#gbkt-main-header {
+  margin-top: 80px;
+  font-size: 25px;
+}
+#phone-img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+#home-header {
+  font-weight: bold;
+}
+
+.gbkt-title-home {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  word-wrap: none;
+}
+
+.home-header-subfont {
+  font-family: "Montserrat", Sans-serif;
+  word-wrap: none;
+}

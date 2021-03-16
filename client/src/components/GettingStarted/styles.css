@@ -1,0 +1,16 @@
+#steps {
+  background-color: #60cfee;
+  padding-bottom: 22vh;
+  display: flex;
+  justify-content: center;
+}
+
+.home-icons {
+  margin-top: 50px;
+}
+
+.home-steps-style {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+}

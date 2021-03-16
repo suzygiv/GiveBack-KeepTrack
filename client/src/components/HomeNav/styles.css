@@ -1,0 +1,10 @@
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+
+nav.sticky-top.navbar.navbar-expand-lg.navbar-light.bg-white {
+  padding: 0px 16px;
+}
+.gbkt-title-header {
+  font-size: 10px;
+}

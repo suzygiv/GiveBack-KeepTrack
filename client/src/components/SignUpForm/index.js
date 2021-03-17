@@ -37,7 +37,7 @@ class Form extends Component {
         console.log(response);
         if (response.data) {
           console.log("successful signup");
-          window.location.replace("/");
+          window.location.replace("/login");
         }
       })
       .catch((error) => {

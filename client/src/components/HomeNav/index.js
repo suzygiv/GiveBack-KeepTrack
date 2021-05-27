@@ -33,7 +33,7 @@ function HomeNav() {
             <ReactBootstrap.Nav.Link href="#steps">
               Getting Started
             </ReactBootstrap.Nav.Link>
-            <ReactBootstrap.NavDropdown
+            {/* <ReactBootstrap.NavDropdown
               title="About"
               id="collasible-nav-dropdown"
             >
@@ -49,7 +49,7 @@ function HomeNav() {
               <ReactBootstrap.NavDropdown.Item href="#acknowledgements">
                 Acknowledgements
               </ReactBootstrap.NavDropdown.Item>
-            </ReactBootstrap.NavDropdown>
+            </ReactBootstrap.NavDropdown> */}
           </ReactBootstrap.Nav>
           <ReactBootstrap.Nav>
             <ReactBootstrap.Nav.Link href="/login">

@@ -108,16 +108,16 @@ class Form extends Component {
                     </div>
                     <div>
                       <Button
-                        className="btn-primary custom-btn login-signup-btns"
-                        onClick={this.handleSubmit}
-                      >
-                        Login
-                      </Button>
-                      <Button
                         className="btn-secondary custom-btn login-signup-btns"
                         href="/signup"
                       >
                         Sign Up
+                      </Button>
+                      <Button
+                        className="btn-primary custom-btn login-signup-btns"
+                        onClick={this.handleSubmit}
+                      >
+                        Login
                       </Button>
                     </div>
                   </form>
